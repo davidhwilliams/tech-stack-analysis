@@ -49,11 +49,40 @@ This notebook includes:
 
 ### Results
 
--
+- Cluster Themes: Clusters were grouped by common library usage:
+  - Frontend-heavy clusters: Dominated by libraries like React, Vue, and Angular.
+  - Backend-heavy clusters: Included frameworks like Express, Koa, and Django.
+  - Utility-heavy clusters: Featured general-purpose libraries like Lodash, Axios, and Moment.
+- Cluster Insights:
+  - Larger clusters represented general-purpose stacks, while smaller clusters indicated niche or domain-specific technologies (e.g., data visualization or 3D graphics).
+  - Utility libraries like Axios and Lodash appeared across multiple clusters, reflecting their versatility.
+- Shortcomings:
+  - The clustering grouped libraries by similarity but didn’t explicitly uncover frontend-backend pairings as originally intended.
 
 ## Future Improvements
 
--
+- Feature Engineering:
+
+  - Incorporate co-occurrence metrics to explicitly capture relationships between frontend and backend libraries.
+  - Use project metadata (e.g., size, stars, or domain) to add context to the clusters.
+
+- Advanced Clustering Techniques:
+
+  - Experiment with graph-based clustering to model relationships between libraries directly.
+  - Explore hierarchical clustering for better interpretability.
+
+- Expanded Dataset:
+
+  - Include additional dependency file types, such as pom.xml for Java or requirements.txt for Python.
+  - Use external datasets, like developer surveys or job postings, to validate and enrich the clustering analysis.
+
+- Visualization Enhancements:
+
+  - Develop interactive dashboards to explore clusters dynamically.
+  - Use network graphs to visualize relationships between libraries.
+
+- Iterative Refinement:
+  - Iterate on preprocessing and clustering based on feedback to align the results more closely with the goal of identifying frontend-backend combinations.
 
 ## License
 
